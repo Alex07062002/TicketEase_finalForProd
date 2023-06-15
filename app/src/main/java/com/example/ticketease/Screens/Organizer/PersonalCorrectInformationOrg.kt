@@ -24,11 +24,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import com.example.ticketease.MVVM.Person.Buyer.Personal.ViewModelPersonal
-import com.example.ticketease.MVVM.Person.Buyer.UpdateBuyer.UpdateBuyerResult
-import com.example.ticketease.MVVM.Person.Buyer.UpdateBuyer.UpdateBuyerStateTextFields
-import com.example.ticketease.MVVM.Person.Buyer.UpdateBuyer.ViewModelUpdateBuyer
-import com.example.ticketease.MVVM.Person.Organizer.Personal.ViewModelPersonalOrg
 import com.example.ticketease.MVVM.Person.Organizer.UpdateOrganizer.UpdateOrgResult
 import com.example.ticketease.MVVM.Person.Organizer.UpdateOrganizer.UpdateOrgStateTextFields
 import com.example.ticketease.MVVM.Person.Organizer.UpdateOrganizer.ViewModelUpdateOrg

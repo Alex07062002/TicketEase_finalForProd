@@ -17,7 +17,6 @@ class ViewModelPersonal @Inject constructor(
     private val prefs : SharedPreferences
 ) : ViewModel() {
     var city  = prefs.getString("city",null)!!
-    var del=prefs.edit().clear().apply()
     private val _personal = MutableLiveData<BuyerWithoutPswd>()
     val personal: LiveData<BuyerWithoutPswd>
         get() = _personal
@@ -30,6 +29,11 @@ class ViewModelPersonal @Inject constructor(
                 prefs.edit().putString("buyer",Gson().toJson(_personal.value,BuyerWithoutPswd::class.java)).apply()
             }
         }
+    }
+
+    fun checkout(){
+        prefs.edit().remove("buyer").apply()
+        prefs.edit().remove("cart").apply()
     }
 }
 

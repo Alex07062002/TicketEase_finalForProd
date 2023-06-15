@@ -160,7 +160,7 @@ fun Personal(navController: NavHostController, viewModel: ViewModelPersonal = hi
 
                                 Button(
                                     onClick = {
-                                        viewModel.del
+                                        viewModel.checkout()
                                         navController.navigate("HelloPage5")
                                     },
                                     modifier = Modifier
@@ -200,7 +200,7 @@ fun Personal(navController: NavHostController, viewModel: ViewModelPersonal = hi
                                         modifier = Modifier
                                             .size(29.dp, 29.dp)
                                             .offset(25.dp, (-5).dp)
-                                            .clickable{
+                                            .clickable {
                                                 navController.navigate("Catalog")
                                             },
                                         contentScale = ContentScale.Crop
@@ -222,7 +222,7 @@ fun Personal(navController: NavHostController, viewModel: ViewModelPersonal = hi
                                         modifier = Modifier
                                             .size(35.dp, 35.dp)
                                             .offset((-7).dp, (-7).dp)
-                                            .clickable{
+                                            .clickable {
                                                 navController.navigate("Preference")
                                             },
                                         contentScale = ContentScale.Crop

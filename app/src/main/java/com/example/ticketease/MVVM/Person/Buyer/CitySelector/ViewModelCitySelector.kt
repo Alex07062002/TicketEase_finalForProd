@@ -42,16 +42,4 @@ class ViewModelCitySelector@Inject constructor(
 
         }
     }
-
-     fun cityByString(cityString:String): Cities {
-        if( cityString=="Moscow"){
-            return Cities.Moscow
-        }else if(cityString=="Voronezh"){
-            return Cities.Voronezh
-        }else if(cityString=="SaintPetersburg"){
-            return Cities.SaintPetersburg
-
-        }
-        return Cities.Moscow
-    }
 }

@@ -2,14 +2,12 @@ package com.example.ticketease.Screens.Organizer
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -45,7 +43,7 @@ fun CitySelectorOrg(navController: NavHostController, viewModel: ViewModelCitySe
                 Text("Город", fontSize = 35.sp, color = Color.Black)
                 Button(
                     onClick = {
-                        viewModel.city(CitySelectorOrg.City(Cities.Voronezh))
+                        viewModel.city(CitySelectorOrg.City(Cities.Воронеж))
                         viewModel.city(CitySelectorOrg.SaveCity)
                         navController.navigate("PersonalOrg")
                     },
@@ -69,9 +67,9 @@ fun CitySelectorOrg(navController: NavHostController, viewModel: ViewModelCitySe
             Box(contentAlignment = Alignment.Center) {
                 Button(
                     onClick = {
-                        viewModel.city(CitySelectorOrg.City(Cities.Moscow))
-                        viewModel.city(CitySelectorOrg.SaveCity)
-                        navController.navigate("PersonalOrg")
+                       viewModel.city(CitySelectorOrg.City(Cities.Москва))
+                       viewModel.city(CitySelectorOrg.SaveCity)
+                       navController.navigate("PersonalOrg")
                     },
                     modifier = Modifier.padding(top = 20.dp).height(50.dp).width(300.dp)
                         .offset(y = 0.dp, x = 0.dp),
@@ -93,9 +91,9 @@ fun CitySelectorOrg(navController: NavHostController, viewModel: ViewModelCitySe
             Box(contentAlignment = Alignment.Center) {
                 Button(
                     onClick = {
-                        viewModel.city(CitySelectorOrg.City(Cities.SaintPetersburg))
-                        viewModel.city(CitySelectorOrg.SaveCity)
-                        navController.navigate("PersonalOrg")
+                       viewModel.city(CitySelectorOrg.City(Cities.Санкт_Петербург))
+                       viewModel.city(CitySelectorOrg.SaveCity)
+                       navController.navigate("PersonalOrg")
                     },
                     modifier = Modifier.padding(top = 20.dp).height(50.dp).width(300.dp)
                         .offset(y = 0.dp, x = 0.dp),

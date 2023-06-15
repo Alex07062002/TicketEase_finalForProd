@@ -29,7 +29,6 @@ import com.example.ticketease.R
 @Composable
 fun CitySelector(navController: NavHostController, viewModel: ViewModelCitySelector = hiltViewModel()) {
 
-    val selectedCity = rememberSaveable { mutableStateOf(Cities.Voronezh) }
     val isButtonPressedVrn = remember { mutableStateOf(false) }
     val isButtonPressedSpb = remember { mutableStateOf(false) }
     val isButtonPressedMsc = remember { mutableStateOf(false) }
@@ -48,7 +47,7 @@ fun CitySelector(navController: NavHostController, viewModel: ViewModelCitySelec
                 Text("Город", fontSize = 35.sp, color = Color.Black)
                 Button(
                     onClick = {
-                        viewModel.city(CitySelector.City(Cities.Voronezh))
+                        viewModel.city(CitySelector.City(Cities.Воронеж))
                         viewModel.city(CitySelector.SaveCity)
                         navController.navigate("Personal")
                     },
@@ -72,7 +71,7 @@ fun CitySelector(navController: NavHostController, viewModel: ViewModelCitySelec
             Box(contentAlignment = Alignment.Center) {
                 Button(
                     onClick = {
-                        viewModel.city(CitySelector.City(Cities.Moscow))
+                        viewModel.city(CitySelector.City(Cities.Москва))
                         viewModel.city(CitySelector.SaveCity)
                         navController.navigate("Personal")
                     },
@@ -96,7 +95,7 @@ fun CitySelector(navController: NavHostController, viewModel: ViewModelCitySelec
             Box(contentAlignment = Alignment.Center) {
                 Button(
                     onClick = {
-                        viewModel.city(CitySelector.City(Cities.SaintPetersburg))
+                        viewModel.city(CitySelector.City(Cities.Санкт_Петербург))
                         viewModel.city(CitySelector.SaveCity)
                         navController.navigate("Personal")
                     },

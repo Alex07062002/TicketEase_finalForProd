@@ -22,12 +22,13 @@ class ViewModelPreferences @Inject constructor(
   get() = _preferences
  init {
     viewModelScope.launch {
-      val listTicket = repository.selectEventCountByBuyer()
-      if (!prefs.contains("buyer") || listTicket<5){
-          _preferences.value = repository.getAllEvents()
-      }else {
-          _preferences.value = repository.preferencesRoom()
-      }
+        if(prefs.contains("buyer")) {
+            val listTicket = repository.selectEventCountByBuyer()
+            if (listTicket > 5) {
+                _preferences.value = repository.preferencesRoom()
+            }
+        }else {
+          _preferences.value = repository.getAllEvents()      }
   }
  }
 

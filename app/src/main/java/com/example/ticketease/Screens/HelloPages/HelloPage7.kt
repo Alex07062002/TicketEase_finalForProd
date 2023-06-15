@@ -34,7 +34,7 @@ fun HelloPage7(navController: NavHostController, viewModel: HelloPage7ViewModel 
 
                 Button(
                     onClick = {
-                        viewModel.city(HelloPage7ChooseCity.City(Cities.Voronezh))
+                        viewModel.city(HelloPage7ChooseCity.City(Cities.Воронеж))
                         viewModel.city(HelloPage7ChooseCity.SaveCity)
                         if (viewModel.roleState == Role.BUYER.toString())
                             navController.navigate("CatalogNAUser") else if(viewModel.roleState == Role.ORGANIZER.toString())
@@ -59,7 +59,7 @@ fun HelloPage7(navController: NavHostController, viewModel: HelloPage7ViewModel 
             Box(contentAlignment = Alignment.Center) {
                 Button(
                     onClick = {
-                        viewModel.city(HelloPage7ChooseCity.City(Cities.Moscow))
+                        viewModel.city(HelloPage7ChooseCity.City(Cities.Москва))
                         viewModel.city(HelloPage7ChooseCity.SaveCity)
                         if (viewModel.roleState == Role.BUYER.toString())
                             navController.navigate("CatalogNAUser") else if(viewModel.roleState == Role.ORGANIZER.toString())
@@ -81,7 +81,7 @@ fun HelloPage7(navController: NavHostController, viewModel: HelloPage7ViewModel 
             Box(contentAlignment = Alignment.Center) {
                 Button(
                     onClick = {
-                        viewModel.city(HelloPage7ChooseCity.City(Cities.SaintPetersburg))
+                        viewModel.city(HelloPage7ChooseCity.City(Cities.Санкт_Петербург))
                         viewModel.city(HelloPage7ChooseCity.SaveCity)
                         if (viewModel.roleState == Role.BUYER.toString())
                             navController.navigate("CatalogNAUser") else if(viewModel.roleState == Role.ORGANIZER.toString())

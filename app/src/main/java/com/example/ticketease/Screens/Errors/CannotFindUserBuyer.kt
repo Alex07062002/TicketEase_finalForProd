@@ -42,7 +42,7 @@ fun CannotFindUserBuyer(navController: NavHostController) {
             Box(contentAlignment = Alignment.Center) {
 
                 Button(
-                    onClick = { navController.navigate("RegisterByer")},
+                    onClick = { navController.navigate("EnterPageByer")},
                     modifier = Modifier
                         .padding(top = 200.dp)
                         .height(50.dp)

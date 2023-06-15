@@ -53,7 +53,7 @@ fun SuccessfulOrder(navController: NavHostController) {
 
                 Button(
 
-                    onClick = {navController.navigate("Personal")},
+                    onClick = {navController.navigate("Catalog")},
                     modifier = Modifier
                         .height(50.dp)
                         .offset(y = 352.dp, x = 28.dp)

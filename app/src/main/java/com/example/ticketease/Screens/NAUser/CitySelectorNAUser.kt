@@ -27,7 +27,6 @@ import com.example.ticketease.R
 @Composable
 fun CitySelectorNAUser(navController: NavHostController, viewModel: ViewModelCitySelectorNAUser = hiltViewModel()) {
 
-    val selectedCity = rememberSaveable { mutableStateOf(Cities.Voronezh) }
     val isButtonPressedVrn = remember { mutableStateOf(false) }
     val isButtonPressedSpb = remember { mutableStateOf(false) }
     val isButtonPressedMsc = remember { mutableStateOf(false) }
@@ -46,7 +45,7 @@ fun CitySelectorNAUser(navController: NavHostController, viewModel: ViewModelCit
                 Text("Город", fontSize = 35.sp, color = Color.Black)
                 Button(
                     onClick = {
-                        viewModel.city(com.example.ticketease.MVVM.Person.NAUser.CorerctCity.CitySelectorNAUser.City(Cities.Voronezh))
+                        viewModel.city(com.example.ticketease.MVVM.Person.NAUser.CorerctCity.CitySelectorNAUser.City(Cities.Воронеж))
                         viewModel.city(com.example.ticketease.MVVM.Person.NAUser.CorerctCity.CitySelectorNAUser.SaveCity)
                         navController.navigate("PersonalNAUser")
                     },
@@ -70,7 +69,7 @@ fun CitySelectorNAUser(navController: NavHostController, viewModel: ViewModelCit
             Box(contentAlignment = Alignment.Center) {
                 Button(
                     onClick = {
-                        viewModel.city(com.example.ticketease.MVVM.Person.NAUser.CorerctCity.CitySelectorNAUser.City(Cities.Moscow))
+                        viewModel.city(com.example.ticketease.MVVM.Person.NAUser.CorerctCity.CitySelectorNAUser.City(Cities.Москва))
                         viewModel.city(com.example.ticketease.MVVM.Person.NAUser.CorerctCity.CitySelectorNAUser.SaveCity)
                         navController.navigate("PersonalNAUser")
                     },
@@ -94,7 +93,7 @@ fun CitySelectorNAUser(navController: NavHostController, viewModel: ViewModelCit
             Box(contentAlignment = Alignment.Center) {
                 Button(
                     onClick = {
-                        viewModel.city(com.example.ticketease.MVVM.Person.NAUser.CorerctCity.CitySelectorNAUser.City(Cities.SaintPetersburg))
+                        viewModel.city(com.example.ticketease.MVVM.Person.NAUser.CorerctCity.CitySelectorNAUser.City(Cities.Санкт_Петербург))
                         viewModel.city(com.example.ticketease.MVVM.Person.NAUser.CorerctCity.CitySelectorNAUser.SaveCity)
                         navController.navigate("PersonalNAUser")
                     },
